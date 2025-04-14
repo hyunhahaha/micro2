@@ -59,7 +59,7 @@ ScrollTrigger.create({
     end: "300px center",  // 끝 위치
     // markers:true,
     animation: gsap.to('.graph_green', { 
-      width: '25.5vw',             // 로딩 박스의 스케일을 1로 설정
+      width: '25vw',             // 로딩 박스의 스케일을 1로 설정
       ease: "none",          // 애니메이션 속도
     }),
     scrub: true,
@@ -78,8 +78,8 @@ circle_text.from(".circle_text04", { stagger: 0.1, y: 50, opacity: 0 });
 
 ScrollTrigger.create({
   trigger: ".section01",
-  start: "1500px top", // 스크롤 시작 위치
-  end: "1900px center", // 끝 위치
+  start: "2200px top", // 스크롤 시작 위치
+  end: "2700px center", // 끝 위치
   // markers:true,
   animation: circle_text,
   scrub: 8,
@@ -105,8 +105,8 @@ ScrollTrigger.create({
 //연달아 올라오는 4줄
 ScrollTrigger.create({
   trigger: ".section03",
-  start: "1300px center",
-  end: "+=300px",
+  start: "1600px center",
+  end: "bottom center",
   // markers:true,
   animation: gsap.from(".ani", { y: 30, opacity: 0, stagger: 0.1 }),
   // pinSpacing:false,
@@ -116,17 +116,17 @@ ScrollTrigger.create({
 
 
 //밑에서 올라오는
-ScrollTrigger.create({
-  trigger: ".section04_motion",
-  start: "-2000px center",  // 스크롤 시작 위치
-  end: "-500px center",  // 끝 위치 (스크롤이 끝날 때)
-  // markers: true,
-  animation: gsap.fromTo('.section04_motion', 
-    { height: 0, y: -50, opacity: 0 }, // 초기 상태: height 0, y 위치 위로 -50, opacity 0
-    { height: '78vw', y: 0, opacity: 1, duration: 1 } // 애니메이션 후 상태: height 78vw, y 0, opacity 1
-  ),
-  scrub: true,
-});
+// ScrollTrigger.create({
+//   trigger: ".section04",
+//   start: "1000px center",  
+//   end: "1500px center",  
+//   markers: true,
+//   animation: gsap.fromTo('.section04_motion', 
+//     { height: 0, y: -50, opacity: 0 }, 
+//     { height: '78vw', y: 0, opacity: 1, duration: 1 }
+//   ),
+//   scrub: true,
+// });
 
 
 
@@ -179,8 +179,8 @@ ScrollTrigger.create({
 //오 박스 2
 ScrollTrigger.create({
   trigger: ".section06",
-  start: "800px center",
-  end: "1400px center",
+  start: "1100px center",
+  end: "1600px center",
   // markers:true,
   animation: gsap.from(".right_box", { y: 30, opacity: 0, stagger: 0.1 }),
   // pinSpacing:false,
@@ -193,8 +193,8 @@ ScrollTrigger.create({
 //왼 박스 2
 ScrollTrigger.create({
   trigger: ".section06",
-  start: "1800px center",
-  end: "2400px center",
+  start: "3000px center",
+  end: "3400px center",
   // markers:true,
   animation: gsap.from(".left_box", { y: 30, opacity: 0, stagger: 0.1 }),
   // pinSpacing:false,
@@ -206,8 +206,8 @@ ScrollTrigger.create({
 ScrollTrigger.create({
   trigger: ".section08_img",
   start: "top center",  // 스크롤 시작 위치
-  end: "500px center",  // 끝 위치
-  // markers:true,
+  end: "800px center",  // 끝 위치
+  markers:true,
   animation: gsap.to('.section08_img',{height:'31vw'}),
   scrub: true,
 });

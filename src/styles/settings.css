@@ -195,10 +195,10 @@ select {
   vertical-align: middle;
 }
 
-/* section {
+section {
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
 
-  border: 1px solid white;
-} */
+  /* border: 1px solid white; */
+}
