@@ -14,8 +14,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
     trigger: ".line_drawing",
-    start: "top center",  // 스크롤 시작 위치
-    end: "500px center",  // 끝 위치
+    start: "top center",
+    end: "500px center",
     // markers:true,
     animation: gsap.to('.line_drawing',{height:'31vw'}),
     scrub: true,
@@ -25,8 +25,8 @@ ScrollTrigger.create({
 //graph_red
 ScrollTrigger.create({
     trigger: ".section02",
-    start: "100px center",  // 스크롤 시작 위치
-    end: "150px center",  // 끝 위치
+    start: "100px center",
+    end: "150px center",
     markers:true,
     animation: gsap.to('.graph_red', { 
       width: '9vw',             // 로딩 박스의 스케일을 1로 설정
@@ -55,8 +55,8 @@ ScrollTrigger.create({
 //graph_green
 ScrollTrigger.create({
     trigger: ".section02",
-    start: "200px center",  // 스크롤 시작 위치
-    end: "250px center",  // 끝 위치
+    start: "200px center",
+    end: "250px center",
     // markers:true,
     animation: gsap.to('.graph_green', { 
       width: '25vw',             // 로딩 박스의 스케일을 1로 설정
@@ -78,8 +78,8 @@ circle_text.from(".circle_text04", { stagger: 0.1, y: 50, opacity: 0 });
 
 ScrollTrigger.create({
   trigger: ".section01",
-  start: "50% center", // 스크롤 시작 위치
-  end: "70% center", // 끝 위치
+  start: "50% center",
+  end: "70% center",
   // markers:true,
   animation: circle_text,
   scrub: 8,
@@ -94,8 +94,8 @@ section03_text.from(".section03_text", { stagger: 0.1, y: 40, opacity: 0 });
 
 ScrollTrigger.create({
   trigger: ".section03",
-  start: "top center", // 스크롤 시작 위치
-  end: "300px center", // 끝 위치
+  start: "top center",
+  end: "300px center",
   // markers:true,
   animation: section03_text,
   scrub: 8,
@@ -113,20 +113,6 @@ ScrollTrigger.create({
   // pin: true,
   scrub: true,
 });
-
-
-//밑에서 올라오는
-// ScrollTrigger.create({
-//   trigger: ".section04",
-//   start: "1000px center",  
-//   end: "1500px center",  
-//   markers: true,
-//   animation: gsap.fromTo('.section04_motion', 
-//     { height: 0, y: -50, opacity: 0 }, 
-//     { height: '78vw', y: 0, opacity: 1, duration: 1 }
-//   ),
-//   scrub: true,
-// });
 
 
 
@@ -148,8 +134,8 @@ ScrollTrigger.create({
 //섹션6 텍스트 왼
 ScrollTrigger.create({
   trigger: ".section06",
-  start: "-200px center",  // 스크롤 시작 위치
-  end: "100px center",  // 끝 위치 (스크롤이 끝날 때)
+  start: "-200px center",
+  end: "100px center",
   // markers: true,
   animation: gsap.fromTo('.left', 
     { width: 0, x: -1500, opacity: 1 }, // 초기 상태: height 0, y 위치 위로 -50, opacity 0
@@ -163,8 +149,8 @@ ScrollTrigger.create({
 //섹션6 텍스트 오
 ScrollTrigger.create({
   trigger: ".section06",
-  start: "-200px center",  // 스크롤 시작 위치
-  end: "100px center",  // 끝 위치 (스크롤이 끝날 때)
+  start: "-200px center",
+  end: "100px center",
   // markers: true,
   animation: gsap.fromTo('.right  ', 
     { width: 0, x: -100, opacity: 1 }, // 초기 상태: height 0, y 위치 위로 -50, opacity 0
@@ -205,8 +191,8 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".section08_img",
-  start: "top center",  // 스크롤 시작 위치
-  end: "800px center",  // 끝 위치
+  start: "top center",
+  end: "800px center",
   // markers:true,
   animation: gsap.to('.section08_img',{height:'31vw'}),
   scrub: true,
