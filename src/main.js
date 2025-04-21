@@ -26,8 +26,8 @@ ScrollTrigger.create({
 ScrollTrigger.create({
     trigger: ".section02",
     start: "100px center",  // 스크롤 시작 위치
-    end: "200px center",  // 끝 위치
-    // markers:true,
+    end: "150px center",  // 끝 위치
+    markers:true,
     animation: gsap.to('.graph_red', { 
       width: '9vw',             // 로딩 박스의 스케일을 1로 설정
       ease: "none",          // 애니메이션 속도
@@ -41,7 +41,7 @@ ScrollTrigger.create({
 ScrollTrigger.create({
     trigger: ".section02",
     start: "150px center",  // 스크롤 시작 위치
-    end: "250px center",  // 끝 위치
+    end: "200px center",  // 끝 위치
     // markers:true,
     animation: gsap.to('.graph_yellow', { 
       width: '19vw',             // 로딩 박스의 스케일을 1로 설정
@@ -56,7 +56,7 @@ ScrollTrigger.create({
 ScrollTrigger.create({
     trigger: ".section02",
     start: "200px center",  // 스크롤 시작 위치
-    end: "300px center",  // 끝 위치
+    end: "250px center",  // 끝 위치
     // markers:true,
     animation: gsap.to('.graph_green', { 
       width: '25vw',             // 로딩 박스의 스케일을 1로 설정
@@ -78,8 +78,8 @@ circle_text.from(".circle_text04", { stagger: 0.1, y: 50, opacity: 0 });
 
 ScrollTrigger.create({
   trigger: ".section01",
-  start: "2200px top", // 스크롤 시작 위치
-  end: "2700px center", // 끝 위치
+  start: "50% center", // 스크롤 시작 위치
+  end: "70% center", // 끝 위치
   // markers:true,
   animation: circle_text,
   scrub: 8,
@@ -207,7 +207,7 @@ ScrollTrigger.create({
   trigger: ".section08_img",
   start: "top center",  // 스크롤 시작 위치
   end: "800px center",  // 끝 위치
-  markers:true,
+  // markers:true,
   animation: gsap.to('.section08_img',{height:'31vw'}),
   scrub: true,
 });
