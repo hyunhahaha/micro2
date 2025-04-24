@@ -27,7 +27,7 @@ ScrollTrigger.create({
     trigger: ".section02",
     start: "100px center",
     end: "150px center",
-    markers:true,
+    // markers:true,
     animation: gsap.to('.graph_red', { 
       width: '9vw',             // 로딩 박스의 스케일을 1로 설정
       ease: "none",          // 애니메이션 속도
