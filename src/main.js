@@ -164,9 +164,9 @@ ScrollTrigger.create({
 
 //오 박스 2
 ScrollTrigger.create({
-  trigger: ".section06",
-  start: "1100px center",
-  end: "1600px center",
+  trigger: ".bg_full_2",
+  start: "top center",
+  end: "300px center",
   // markers:true,
   animation: gsap.from(".right_box", { y: 30, opacity: 0, stagger: 0.1 }),
   // pinSpacing:false,
@@ -178,9 +178,9 @@ ScrollTrigger.create({
 
 //왼 박스 2
 ScrollTrigger.create({
-  trigger: ".section06",
-  start: "3000px center",
-  end: "3400px center",
+  trigger: ".bg_full_3",
+  start: "top center",
+  end: "300px center",
   // markers:true,
   animation: gsap.from(".left_box", { y: 30, opacity: 0, stagger: 0.1 }),
   // pinSpacing:false,
