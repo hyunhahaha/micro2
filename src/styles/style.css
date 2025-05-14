@@ -542,10 +542,17 @@ img{
 .section09_text{
   position: absolute;
   left: 50vw;
-  top: 65vh;
+  top: 58vh;
   translate:-50% -50%;
 
   img{
     width: 90vw;
+  }
+}
+
+/* 맥북 14인치 이하 (1512px 이하) */
+@media (max-width: 1512px) {
+  .section09_text {
+    top: 53vh;
   }
 }
