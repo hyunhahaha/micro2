@@ -25,6 +25,32 @@ img{
     background-color: black;
   }
 
+  .header_text {
+    display: flex; /* Flexbox 활성화 */
+    justify-content: space-between; /* 좌우 끝으로 요소 배치 */
+    background-color: #030303;
+    padding: 30px 50px 15px 50px;
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    text-align: center;
+  }
+  
+  .header_left {
+    display: flex;
+    gap: 30px;
+  }
+
+
+  a {
+    color: inherit;         /* 부모 요소의 글자색을 따름 */
+    text-decoration: none;  /* 밑줄 제거 */
+  }
+  
+  a:hover {
+    color: orange;           /* 호버 시 색상 변경 */
+  }
+
+
+
   .section01_container .bg_full {
     position: relative;
   
